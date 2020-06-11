@@ -1,21 +1,46 @@
 .header { grid-area: header; }
 .menu { grid-area: menu; }
+.left { grid-area: left; }
+.right { grid-area: right; }
 .main { grid-area: main; }
 .footer { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-	'menu menu menu menu menu menu'
-    'main main main main main main'
-    'footer footer footer footer footer footer';
-  grid-gap: 10px;
-  padding: 10px;
+    'left left left header header header header right right right'
+	'left left left menu menu menu menu right right right'
+    'left left left main main main main right right right'
+    'left left left footer footer footer footer right right right';
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
 
 body {
 	background-color: gray;
+}
+
+video {
+	width: 400px;
+	margin-left: 29%;
+}
+
+#welcome {
+	margin-left: 29%;
 }
 
 ul {
@@ -23,17 +48,20 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: yellow;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
 }
 
 li {
-	
 	float: left;
-	margin-left: 14.7%;
-	margin-right: 14.7%;
+	margin-left: 12.8%;
+	margin-right: 12.8%;
 }
 
 li a {
+	font-weight: bold;
 	display: block;
 	text-decoration: none;
 	padding-top: 8px;
