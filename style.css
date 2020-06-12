@@ -15,23 +15,19 @@
 }
 
 div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: right;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: right;
+	width: 180px;
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 body {
-	background-color: gray;
+	background-color: #e0e0e0;
 }
 
 video {
@@ -41,6 +37,20 @@ video {
 
 #welcome {
 	margin-left: 29%;
+}
+
+#program h2 {
+	text-align: center;
+}
+
+#program p {
+	margin-left: 25px;
+	float: left;
+	width: 40%;
+}
+
+#about {
+	text-align: center;
 }
 
 ul {
